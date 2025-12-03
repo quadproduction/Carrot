@@ -277,7 +277,7 @@ SCIM_SERVICE_PROVIDER = {
     "USER_ADAPTER": "users.scim.SCIMUser",
     "GROUP_ADAPTER": "users.scim.SCIMGroup",
     "GROUP_MODEL": "users.models.Group",
-    "BASE_LOCATION_GETTER": "jumper.utils.get_full_domain_from_request",
+    "BASE_LOCATION_GETTER": "_config.services.utils.get_full_domain_from_request",
     "GET_IS_AUTHENTICATED_PREDICATE": lambda _: True,
     "AUTH_CHECK_MIDDLEWARE": "users.scim.SCIMAuthCheckMiddleware",
     "AUTHENTICATION_SCHEMES": [
