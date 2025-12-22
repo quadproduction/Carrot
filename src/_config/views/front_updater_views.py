@@ -66,7 +66,8 @@ def apply_version_limitation(versions):
 
 
 def get_new_version_info(version_tag):
-    url = f"https://github.com/LibertAntoine/Jumper/releases/download/{version_tag}/latest.json"
+    # TODO: define this dynamicly based on settings or other configuration
+    url = f"https://github.com/Jumper-Carrot/Jumper/releases/download/{version_tag}/latest.json"
     response = requests.get(url)
     response.raise_for_status()  # raise error if HTTP code != 200
     return response.json()
