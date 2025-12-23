@@ -37,6 +37,7 @@ def get_default_background_base_key():
 
 class SystemInfo(SingletonModel):
     allow_action_workspaces = models.BooleanField(default=False)
+    allow_showing_description = models.BooleanField(default=True)
 
     allow_background_image = models.BooleanField(default=False)
     default_background_image = ResizedImageField(

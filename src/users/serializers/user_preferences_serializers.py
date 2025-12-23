@@ -23,6 +23,7 @@ class UserPreferencesSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "disable_default_background_image",
+            "allow_showing_description",
             "custom_background_image_url",
         ]
         read_only_fields = [

@@ -13,6 +13,7 @@ class SystemInfoSerializer(serializers.ModelSerializer):
         model = SystemInfo
         fields = [
             "allow_action_workspaces",
+            "allow_showing_description",
             "default_background_image_url",
             "allow_background_image",
             "allow_user_custom_background_image",

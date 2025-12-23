@@ -185,6 +185,7 @@ class UserPreferences(models.Model):
         User, on_delete=models.CASCADE, related_name="preferences"
     )
     disable_default_background_image = models.BooleanField(default=False)
+    allow_showing_description = models.BooleanField(default=True)
     custom_background_image = ResizedImageField(
         size=settings.GALLERY_BACKGROUND_IMAGE_RESOLUTION,
         crop=["middle", "center"],
